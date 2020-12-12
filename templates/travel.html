@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div id="travel" class="traveling">
+         
+   <div class="container">
+    
+      <div class="row">
+         <div class="col-md-12 ">
+            <div class="titlepage">
+               <i><img src="{{ url_for('static',filename='images/think.jpg')}}" alt="icon"/></i>
+               <h2><font face = "Comic sans MS" >Whats your plan??</font></h2>
+               <span>Resturants, Hotels, Scenic Routes, Long Drives, Trekking we've got you coverd!</span> 
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="{{ url_for('static',filename='images/trivago.png')}}" alt="icon"/></i>
+               <h3>Hotel? Trivago</h3>
+               <p> Book your vaccation with Trivago </p>
+               <div class="read-more">
+                  <a  href="https://www.trivago.in/en?themeId=280&sem_keyword=trivago&sem_creativeid=381249320137&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=259742967&sem_adgroupid=24450848727&sem_targetid=kwd-5593367084&sem_location=9062111&cip=9119000005&gclid=Cj0KCQiA8dH-BRD_ARIsAC24umY0LMz-c_5ix-4oPNaM18gbA7ciWrQzuempHygEB0YWJ03OeNHKzCYaAskaEALw_wcB">Book a Hotel</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="{{ url_for('static',filename='images/uber.jpg')}}" alt="icon"/></i>
+               <h3>Your private driver</h3>
+               <p> Connecting you with the places, and things you love</p>
+               <div class="read-more">
+                  <a  href="https://www.uber.com/in/en/ride/">Book a Cab</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="{{ url_for('static',filename='images/rental.jpg')}}" alt="icon"/></i>
+               <h3>Love the road</h3>
+               <p> Enjoy your holidays with our wheels </p>
+               <div class="read-more">
+                  <a  href="https://www.rentalcars.com/?affiliateCode=google&preflang=us&label=generic-XVxDnOXPIDqVqdlCouqKlAS105773748875&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=&ppc_network=g&feeditemid=&ppc_targetid=kwd-1597110547&loc_physical_ms=9062111&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=Cj0KCQiA8dH-BRD_ARIsAC24umb27EOYy1LtHrHQS9c11gaIFpOx91bjOVdLELvL9XVIT-6JnSWb0LIaApIgEALw_wcB">Rent a Car</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="{{ url_for('static',filename='images/tour.jpg')}}" alt="icon"/></i>
+               <h3>City Guides</h3>
+               <p> Find a city guide for the best experience</p>
+               <div class="read-more">
+                  <a  href="#">Find Guide</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- end traveling -->
+<!--London -->
+<div class="London">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage">
+               <h2>Backpack through Mysuru</h2>
+               <span>So Mysuru has many interesting places where you can enjoy yourself and get lost in beautiful nature. Get ready with your backpack and favorite attire to start the journey to Mysore!</span> 
+               <button type="button" class="btn btn-success" ><a href = '/blog/blog-post'>Read the Blogs</a></button>
+             </div>
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid">
+      <div class="London-img">
+       <figure><img src="{{ url_for('static',filename='images/long.jpg')}}" alt="img"/></figure>  
+      </div>
+   </div>
+</div>
+
+</div>
+          
+{%endblock%}

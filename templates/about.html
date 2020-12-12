@@ -1,0 +1,36 @@
+      
+ {% extends "layout.html" %}
+ {% block body %}     
+      <!-- about -->
+      <hr>
+      <div id="about" class="about">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12 ">
+                 <div class="titlepage">
+                    <h2><font face = "Anivers">About  our travel agency</font></h2>
+                    <span> <h3><font face = "Anivers" size="5">A website where the tourists and locals can share their experience about a location, restaurant or any local business that isn’t the first recommendation when you search about the place on a search engine.
+                     Here you can find people share their experience with other people.</font></h3> </span>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="bg">
+           <div class="container">
+              <div class="row">
+                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="about-box">
+                       <p> <span><font face = "Anivers" size = "5">Instead feeling crowded and congested in the same sunrise point only to find out it isn’t what you hoped for, find a place that trekkers recommend for the best view, instead of having the same happy meal that you always have, have something that lifts your spirits that the locals and foodies recommend. Connect with the heart and soul of the place and the only way to do that is interacting with its locals and other tourists that have been here before you.</font></span></p>
+                       <div class="palne-img-area">
+                          <img src="{{ url_for('static',filename='images/plane-img.png')}}" alt="images">
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <!--<a href="#">Read More</a>-->
+        </div>
+     </div>
+     <!-- end about -->
+
+     {%endblock%}

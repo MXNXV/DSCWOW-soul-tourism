@@ -1,0 +1,65 @@
+
+
+
+{% extends "layout.html" %}
+{% block body %}
+      <!-- end header -->
+      <section style="text-align: center;">
+         <div class="banner-main">
+            <img src="{{ url_for('static',filename='images/pune.jpg')}}" alt="#"/>
+            <div class="container">
+               <div class="text-bg">
+                  <h1>Mysore<br><h2><strong class="white" ><font size = "7" color = "yellow">Where people forget years and remember moments</font></strong></h2></h1>
+                  
+                  <div class="button_section"> <a class="main_bt" href="/about">Read More</a>  </div>
+                  <div class="container">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         
+         {% for post in posts %} 
+         {%set img= 'images/'+post.img_file %}
+         <div style="background-image:{{ url_for('static',filename='images/bg.jpg')}}";></div>   
+         <div class="post-preview">
+            
+           
+             <h2 class="post-title" style="color: red;"><strong class="red">{{post.title}}</strong>
+
+             </h2>
+           
+           <p class="post-meta">Posted by
+             <a href="#">{{post.name}}</a>
+             on {{post.date}}</p>
+         </div>
+       <a href="/blog/{{post.slug}}">  <img src="{{ url_for('static',filename=img)}}" alt="#" ></a>
+         <h3>{{post.content[0:243]}}...</h3>
+         
+         <hr>
+</li></a>
+</div>
+         {% endfor %}
+         
+
+         </section>
+         <div class="text-center">
+            <button type="button" class="btn btn-primary"><a href="/blog/blog-post">More Posts</a></button>
+          </div>
+      {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+      

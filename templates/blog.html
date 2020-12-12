@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- our blog -->
+<div id="blog" class="blog">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2>Our Blog</h2>
+                <span>Checkout what the localites and tourists have been up to!!</span> 
+             </div>
+          </div>
+       </div>
+      {% for post in posts %}
+      {% set fname = 'images/'+post.img_file %}
+      {% set loc = post.location %}
+
+       
+
+       <div class="row">
+         <div class="col-md-12">
+            <div class="blog-box" style="text-align: center;">
+               <figure><img src="{{ url_for('static',filename=fname)}}" alt="#" >
+                  <span >{{post.date}}</span>
+               </figure>
+               <strong class="blue"><font face = "Comic sans MS" size = "6" color = "black">{{post.title}}</font></strong><br>
+               <font face = "Comic sans MS" size = "5"color = "black">Posted by {{post.name}}</font>
+               <p><strong><font face = "Comic sans MS" size = "5" >{{post.content}}</font></strong></p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <br>
+         <hr>
+         <br>
+
+         
+         {% endfor %}
+       </div>
+    </div>
+ </div>
+ <!-- end our blog -->
+
+ {%endblock%}
