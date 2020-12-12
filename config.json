@@ -1,0 +1,14 @@
+{
+    "params":
+        {
+            "local_server":"True",
+            "local_uri":"mysql://root:@localhost/tourism",
+            "prod_uri":"mysql://root:@localhost/torism",
+            "gmail_user":"manavmandalpune@gmail.com",
+            "gmail_password":"Sahil@2001",
+            "no_of_posts":2,
+            "admin_user":"solmxnxv@soultourism",
+            "admin_password":"admin",
+            "upload_loc":"C:\\Users\\Manav\\Desktop\\Git\\Final\\static\\images"
+        }
+}
